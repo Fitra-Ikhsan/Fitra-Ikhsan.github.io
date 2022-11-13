@@ -705,11 +705,13 @@
       var status = '&entry.1260895696=' + document.getElementsByClassName("is-active js-rsvp-option")[0].getAttribute("data-value")
       var nama = '&entry.1386927002=' + document.getElementById('name-placeholder').value
       googleformURL = baseURL + nama + status + ref + kode
-      var autosbmt = window.open(googleformURL + '&submit=Submit')
+      // var autosbmt = window.open(googleformURL + '&submit=Submit')
       btnKirim = document.getElementById("button-kirim")
       btnKirim.disabled = true;
       btnKirim.style.opacity = '25%';
       btnKirim.innerHTML = 'Sudah terkirim';
+      $.get(googleformURL + '&submit=Submit')
+
       // setTimeout(function () {
       //   autosbmt.close();
       // }, 100);
