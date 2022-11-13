@@ -5682,6 +5682,19 @@ h1 {
     }
 }
 
+.h1-long {
+    font-size: xx-large;
+    font-family: "Canela Web", serif;
+    margin-top: 1.5em;
+}
+
+@media only screen and (min-width: 770px) {
+    .h1-long {
+        font-size: xxx-large;
+        margin-top: 1.5em;
+    }
+}
+
 h2 {
     font-size: 2em;
     font-weight: 400;
